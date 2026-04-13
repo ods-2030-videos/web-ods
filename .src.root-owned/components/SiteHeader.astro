@@ -1,0 +1,36 @@
+---
+import { buildLanguageLinks, getPageUrl } from '../utils/site.js';
+
+const { locale, lang, activePage = 'home' } = Astro.props;
+
+const navItems = [
+  { key: 'home', label: locale.nav.home, href: getPageUrl(lang, 'home') },
+  { key: 'videos', label: locale.nav.videos, href: getPageUrl(lang, 'videos') },
+  { key: 'quiz', label: locale.nav.quiz, href: getPageUrl(lang, 'quiz') },
+  { key: 'deepening', label: locale.nav.deepening, href: getPageUrl(lang, 'deepening') },
+];
+
+const languageLinks = buildLanguageLinks(activePage);
+---
+
+<header class="topbar">
+  <div class="brand">
+    <strong>{locale.siteTitle}</strong>
+  </div>
+
+  <nav aria-label={locale.labels.mainNavigation}>
+    {navItems.map((item) => (
+      <a href={item.href} class:list={{ 'is-active': item.key === activePage }}>
+        {item.label}
+      </a>
+    ))}
+  </nav>
+
+  <div class="lang-switch" aria-label={locale.labels.languageSwitch}>
+    {languageLinks.map((item) => (
+      <a href={item.href} class:list={{ 'is-active': item.code === lang }}>
+        {item.label}
+      </a>
+    ))}
+  </div>
+</header>

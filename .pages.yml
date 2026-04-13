@@ -1,0 +1,431 @@
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "content(create): {path}"
+      update: "content(update): {path}"
+      delete: "content(delete): {path}"
+      rename: "content(rename): {oldPath} -> {newPath}"
+
+media:
+  input: public/uploads
+  output: /uploads
+  categories: [image, document]
+  rename: safe
+
+content:
+  - name: textos
+    label: Textos
+    type: group
+    items:
+      - name: locale_es
+        label: Castellano
+        type: file
+        path: src/data/content/locales/es.json
+        format: json
+        fields: &locale_fields
+          - name: htmlLang
+            label: Idioma HTML
+            type: string
+          - name: localeLabel
+            label: Código corto
+            type: string
+          - name: siteTitle
+            label: Título del sitio
+            type: string
+          - name: seoDescription
+            label: Descripción SEO
+            type: text
+          - name: heroEyebrow
+            label: Texto superior del hero
+            type: string
+          - name: heroTitle
+            label: Titular principal
+            type: string
+          - name: heroLead
+            label: Texto principal
+            type: text
+          - name: heroNote
+            label: Nota del hero
+            type: text
+          - name: nav
+            label: Navegación
+            type: object
+            fields:
+              - name: home
+                label: Inicio
+                type: string
+              - name: overview
+                label: ODS
+                type: string
+              - name: videos
+                label: Vídeos
+                type: string
+              - name: quiz
+                label: Autoevaluación
+                type: string
+              - name: deepening
+                label: Profundización
+                type: string
+          - name: home
+            label: Inicio
+            type: object
+            fields:
+              - name: title
+                label: Título de la sección
+                type: string
+              - name: lead
+                label: Texto introductorio
+                type: text
+          - name: sections
+            label: Titulares de secciones
+            type: object
+            fields:
+              - name: overviewTitle
+                label: Título ODS
+                type: string
+              - name: overviewLead
+                label: Descripción ODS
+                type: text
+              - name: videosTitle
+                label: Título vídeos
+                type: string
+              - name: videosLead
+                label: Descripción vídeos
+                type: text
+              - name: quizTitle
+                label: Título autoevaluación
+                type: string
+              - name: quizLead
+                label: Descripción autoevaluación
+                type: text
+              - name: deepeningTitle
+                label: Título profundización
+                type: string
+              - name: deepeningLead
+                label: Descripción profundización
+                type: text
+          - name: labels
+            label: Etiquetas de interfaz
+            type: object
+            fields:
+              - name: groupLink
+                label: Abrir grupo
+                type: string
+              - name: watch
+                label: Abrir vídeo
+                type: string
+              - name: launchVideo
+                label: Cargar vídeo
+                type: string
+              - name: sourceMaterial
+                label: Banco de preguntas
+                type: string
+              - name: authors
+                label: Autores
+                type: string
+              - name: authorsUnknown
+                label: Autores no indicados
+                type: string
+              - name: subtitles
+                label: Subtítulos
+                type: string
+              - name: character
+                label: Carácter
+                type: string
+              - name: license
+                label: Licencia
+                type: string
+              - name: summary
+                label: Resumen
+                type: string
+              - name: difficulty
+                label: Nivel
+                type: string
+              - name: time
+                label: Tiempo estimado
+                type: string
+              - name: plannedVideo
+                label: Vídeo previsto
+                type: string
+              - name: plannedGroup
+                label: Vídeos previstos
+                type: string
+              - name: noPublicUrl
+                label: Sin enlace público
+                type: string
+              - name: plannedNote
+                label: Nota vídeo previsto
+                type: text
+              - name: quizSource
+                label: Nota del quiz
+                type: text
+              - name: startQuiz
+                label: Botón iniciar quiz
+                type: string
+              - name: reshuffleQuiz
+                label: Botón nuevo intento
+                type: string
+              - name: submitQuiz
+                label: Botón corregir
+                type: string
+              - name: score
+                label: Aciertos
+                type: string
+              - name: selectedQuestions
+                label: Preguntas seleccionadas
+                type: string
+              - name: orientation
+                label: Orientación
+                type: string
+              - name: correctAnswer
+                label: Respuesta correcta
+                type: string
+              - name: wrongAnswers
+                label: Errores
+                type: string
+              - name: resultCategory
+                label: Categoría del resultado
+                type: string
+              - name: resourceLink
+                label: Abrir recurso
+                type: string
+              - name: openSection
+                label: Abrir página
+                type: string
+              - name: coveredGoals
+                label: ODS cubiertos
+                type: string
+              - name: publicAndPlannedVideos
+                label: Vídeos públicos y previstos
+                type: string
+              - name: questionBank
+                label: Preguntas en banco
+                type: string
+              - name: deepeningResources
+                label: Recursos de profundización
+                type: string
+              - name: documentedVideos
+                label: Vídeos documentados
+                type: string
+              - name: subtopics
+                label: Subtemas
+                type: string
+              - name: documentedResources
+                label: Recursos documentados
+                type: string
+              - name: noFailedQuestions
+                label: Sin respuestas falladas
+                type: string
+              - name: mainNavigation
+                label: Navegación principal
+                type: string
+              - name: languageSwitch
+                label: Cambio de idioma
+                type: string
+          - name: quizUi
+            label: Mensajes del quiz
+            type: object
+            fields:
+              - name: informative
+                label: Informativa
+                type: string
+              - name: motivational
+                label: Motivadora
+                type: string
+              - name: missingAnswers
+                label: Faltan respuestas
+                type: text
+              - name: selectedModel
+                label: Descripción del modelo
+                type: text
+          - name: footer
+            label: Pie de página
+            type: text
+      - name: locale_en
+        label: English
+        type: file
+        path: src/data/content/locales/en.json
+        format: json
+        fields: *locale_fields
+      - name: locale_eu
+        label: Euskara
+        type: file
+        path: src/data/content/locales/eu.json
+        format: json
+        fields: *locale_fields
+
+  - name: estructura
+    label: Estructura base
+    type: group
+    items:
+      - name: ods_catalog
+        label: Catálogo ODS
+        type: file
+        path: src/data/content/odsCatalog.json
+        format: json
+        list: true
+        fields:
+          - name: id
+            label: Número ODS
+            type: string
+          - name: name
+            label: Nombre del ODS
+            type: string
+
+  - name: videos
+    label: Vídeos
+    type: file
+    path: src/data/content/videoSections.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Número ODS
+        type: string
+      - name: title
+        label: Título del bloque
+        type: string
+      - name: groupLink
+        label: Enlace de grupo o lista
+        type: string
+      - name: planned
+        label: Bloque previsto
+        type: boolean
+      - name: note
+        label: Nota del bloque
+        type: text
+      - name: videos
+        label: Vídeos del bloque
+        type: object
+        list: true
+        fields:
+          - name: slot
+            label: Posición o número
+            type: string
+          - name: title
+            label: Título del vídeo
+            type: string
+          - name: url
+            label: URL del vídeo
+            type: string
+          - name: authors
+            label: Autores
+            type: text
+          - name: license
+            label: Licencia
+            type: string
+          - name: licenseUrl
+            label: URL de licencia
+            type: string
+          - name: subtitles
+            label: Subtítulos
+            type: string
+          - name: character
+            label: Carácter
+            type: string
+
+  - name: quiz
+    label: Autoevaluación
+    type: file
+    path: src/data/content/quiz.json
+    format: json
+    fields:
+      - name: bankNote
+        label: Nota introductoria
+        type: text
+      - name: categories
+        label: Categorías de resultado
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Nombre de la categoría
+            type: string
+          - name: min
+            label: Mínimo
+            type: number
+          - name: max
+            label: Máximo
+            type: number
+          - name: text
+            label: Descripción
+            type: text
+      - name: questions
+        label: Preguntas
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: ID
+            type: string
+          - name: orientation
+            label: Orientación
+            type: select
+            options:
+              values: [Informativa, Motivadora]
+          - name: sourceVideo
+            label: Vídeo de referencia
+            type: string
+          - name: prompt
+            label: Pregunta
+            type: text
+          - name: options
+            label: Opciones
+            type: string
+            list: true
+          - name: correctIndex
+            label: Índice correcto
+            type: number
+          - name: explanation
+            label: Explicación
+            type: text
+
+  - name: profundizacion
+    label: Profundización
+    type: file
+    path: src/data/content/deepeningSections.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Número ODS
+        type: string
+      - name: title
+        label: Título del bloque
+        type: string
+      - name: items
+        label: Recursos directos
+        type: object
+        list: true
+        fields: &resource_fields
+          - name: title
+            label: Título
+            type: string
+          - name: summary
+            label: Resumen
+            type: text
+          - name: difficulty
+            label: Dificultad
+            type: string
+          - name: time
+            label: Tiempo estimado
+            type: string
+          - name: url
+            label: URL
+            type: string
+      - name: subtopics
+        label: Subtemas
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Título del subtema
+            type: string
+          - name: items
+            label: Recursos del subtema
+            type: object
+            list: true
+            fields: *resource_fields

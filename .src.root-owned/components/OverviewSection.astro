@@ -1,0 +1,21 @@
+---
+import { odsCatalog } from '../data/siteData.js';
+
+const { locale } = Astro.props;
+---
+
+<section class="section shell">
+  <div class="section-heading">
+    <h2>{locale.sections.overviewTitle}</h2>
+    <p>{locale.sections.overviewLead}</p>
+  </div>
+
+  <div class="ods-grid">
+    {odsCatalog.map((ods) => (
+      <article class="ods-card card">
+        <strong>{ods.id}</strong>
+        <span>{ods.name}</span>
+      </article>
+    ))}
+  </div>
+</section>
