@@ -66,7 +66,6 @@ Cada push a `main`:
 4. Comprobar que el repo público final coincide con `base: '/pagina_astro/'` en `astro.config.mjs`.
    Si el nombre real del repo no es `pagina_astro`, hay que cambiar ese `base`.
 5. Entrar en Pages CMS y conectar el repositorio con la GitHub App de Pages CMS.
-6. Invitar al cliente como colaborador desde Pages CMS si no queréis darle acceso directo a GitHub.
 
 ## Nota sobre subidas de archivos
 
