@@ -1,0 +1,23 @@
+---
+import PageBanner from '../../components/PageBanner.astro';
+import QuizSection from '../../components/QuizSection.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getLocaleConfig, getStaticLanguagePaths } from '../../utils/site.js';
+
+export function getStaticPaths() {
+  return getStaticLanguagePaths();
+}
+
+const lang = Astro.params.lang;
+const locale = getLocaleConfig(lang);
+---
+
+<Layout
+  lang={locale.htmlLang}
+  title={`${locale.sections.quizTitle} | ${locale.siteTitle}`}
+  description={locale.sections.quizLead}
+  assetBase="../../"
+>
+  <PageBanner locale={locale} lang={lang} activePage="quiz" />
+  <QuizSection locale={locale} />
+</Layout>

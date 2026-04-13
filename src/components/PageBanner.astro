@@ -1,0 +1,11 @@
+---
+import SiteHeader from './SiteHeader.astro';
+
+const { locale, lang, activePage } = Astro.props;
+---
+
+<main class="hero shell">
+  <div class="page-banner card">
+    <SiteHeader locale={locale} lang={lang} activePage={activePage} />
+  </div>
+</main>

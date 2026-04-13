@@ -1,0 +1,149 @@
+{
+  "bankNote": "La autoevaluación del ODS 5 parte de un banco de 8 preguntas y cada intento selecciona 5: 2 informativas y 3 motivadoras.",
+  "categories": [
+    {
+      "min": 0,
+      "max": 1,
+      "label": "No concienciado",
+      "text": "Has comenzado a explorar la igualdad de género en el ámbito digital, pero aún quedan conceptos clave por asimilar. No te preocupes, es un tema complejo y lleno de matices. Te animamos a revisar los vídeos y los materiales de profundización para entender mejor cómo los sesgos en IA, los algoritmos de contratación y los roles en videojuegos pueden perpetuar desigualdades. ¡Cada paso cuenta para construir una tecnología más justa!"
+    },
+    {
+      "min": 2,
+      "max": 2,
+      "label": "Camino de mejora",
+      "text": "Vas por buen camino. Has identificado algunas de las principales problemáticas, como la existencia de sesgos en los datos o la necesidad de auditar algoritmos. Aún puedes profundizar en cómo aplicar medidas concretas (anonimización de currículums, diseño de datasets inclusivos, creación de personajes diversos) en tu futura práctica profesional. Sigue así, estás en el camino de convertirte en agente de cambio."
+    },
+    {
+      "min": 3,
+      "max": 3,
+      "label": "Concienciado",
+      "text": "¡Bien! Tienes una comprensión sólida de los retos de la igualdad de género en el sector tecnológico. Sabes que la IA puede reproducir sesgos históricos y que los videojuegos han cosificado a la mujer, pero también reconoces que existen herramientas para revertirlo: auditorías, anonimización, diseño de personajes diversos. Este nivel de conciencia es esencial para que, como futura profesional, puedas desarrollar soluciones más equitativas."
+    },
+    {
+      "min": 4,
+      "max": 4,
+      "label": "Muy concienciado",
+      "text": "Excelente. Has interiorizado la mayoría de los conceptos y eres capaz de conectar los problemas (sesgos en selección, brechas en STEM, representación en videojuegos) con soluciones concretas desde la ingeniería informática. Tu visión crítica te permite identificar no solo el problema, sino también las palancas para construir tecnología inclusiva. ¡Sigue profundizando y compartiendo este conocimiento!"
+    },
+    {
+      "min": 5,
+      "max": 5,
+      "label": "Perfectamente concienciado",
+      "text": "¡Impresionante! Has demostrado un dominio completo de los contenidos. No solo entiendes cómo se generan los sesgos de género en IA y en la industria del videojuego, sino que también manejas estrategias para prevenirlos y corregirlos. Tienes una visión integral del ODS 5 aplicada al ámbito informático, lo que te sitúa como un agente clave para diseñar un futuro digital más justo, diverso y libre de estereotipos. ¡Gracias por tu compromiso!"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "orientation": "Informativa",
+      "sourceVideo": "Vídeo 1",
+      "prompt": "¿De dónde aprende la IA?",
+      "options": [
+        "Nace sabiendo.",
+        "Aprende de datos históricos sesgados.",
+        "Aprende de datos que reflejan una realidad justa.",
+        "Se entrena leyendo bulos de Twitter."
+      ],
+      "correctIndex": 1,
+      "explanation": "El vídeo explica que la IA aprende de datos históricos que contienen datos históricos sesgados."
+    },
+    {
+      "id": 2,
+      "orientation": "Informativa",
+      "sourceVideo": "Vídeo 1",
+      "prompt": "¿Qué sucede con los modelos de contratación por IA?",
+      "options": [
+        "Siempre eligen a los y las mejores candidatas, independientemente del género.",
+        "No tienen ningún criterio en su decisión.",
+        "Contratan más mujeres para cumplir el cupo de género.",
+        "Se descartan sistemáticamente mujeres con buena formación y experiencia."
+      ],
+      "correctIndex": 3,
+      "explanation": "El vídeo explica que, en estos sistemas supuestamente objetivos, candidatas con buena formación y experiencia quedan fuera, mientras perfiles masculinos similares pasan el filtro."
+    },
+    {
+      "id": 3,
+      "orientation": "Informativa",
+      "sourceVideo": "Vídeo 2",
+      "prompt": "¿Qué roles ha perpetuado históricamente la industria del videojuego?",
+      "options": [
+        "Roles que presentan a la mujer como un trofeo o una víctima pasiva.",
+        "Roles equitativos y libres de prejuicios de género.",
+        "Los videojuegos no perpetúan ningún rol, son solo juegos.",
+        "Roles que presentan al hombre como agentes secundarios e innecesarios en la trama."
+      ],
+      "correctIndex": 0,
+      "explanation": "El vídeo explica (y muestra con diversos ejemplos) que a menudo los videojuegos han perpetuado roles que cosifican a la mujer."
+    },
+    {
+      "id": 4,
+      "orientation": "Informativa",
+      "sourceVideo": "Vídeo 2",
+      "prompt": "¿Qué clase de experiencias invita a crear el ODS 5 en el mundo del videojuego?",
+      "options": [
+        "Videojuegos en los que los roles estereotípicos se inviertan, relegando a los hombres a personajes secundarios.",
+        "Videojuegos sin personajes, para evitar caer en sesgos.",
+        "Juegos en los que se cosifique y sexualice a los personajes constantemente, pero sin distinguir por género.",
+        "Experiencias donde la diversidad sea la norma, y no la excepción."
+      ],
+      "correctIndex": 3,
+      "explanation": "El vídeo dice expresamente: “El ODS 5 nos reta a crear experiencias donde la diversidad sea la configuración por defecto.”"
+    },
+    {
+      "id": 5,
+      "orientation": "Motivadora",
+      "sourceVideo": "Vídeo 1",
+      "prompt": "¿Qué harías tú con los currículums para evitar sesgos?",
+      "options": [
+        "Exigir y usar todos los datos sensibles de forma explícita.",
+        "Contratar aleatoriamente.",
+        "Anonimizar los currículums.",
+        "Mandárselos a ChatGPT, Claude y Grok para que decidan entre los tres."
+      ],
+      "correctIndex": 2,
+      "explanation": "El vídeo explica que ocultar la foto, nombre y otros datos relacionados con el género (proxies) es un primer paso para evitar los sesgos."
+    },
+    {
+      "id": 6,
+      "orientation": "Motivadora",
+      "sourceVideo": "Vídeo 1",
+      "prompt": "¿Qué debes hacer con los algoritmos?",
+      "options": [
+        "Confiar ciegamente en ellos, la máquina hace las cosas mejor que yo.",
+        "Auditarlos constantemente, y ajustar los modelos cuando se detectan penalizaciones sistemáticas.",
+        "Dejarlos tal y como están, pero verificar las salidas manualmente por si se cuela alguna que parezca injusta.",
+        "Ejecutarlos muchas veces para darles la oportunidad de pensárselo mejor y darse cuenta del sesgo."
+      ],
+      "correctIndex": 1,
+      "explanation": "El vídeo explica la importancia de auditar los modelos para poder detectar sesgos y ajustar los modelos."
+    },
+    {
+      "id": 7,
+      "orientation": "Motivadora",
+      "sourceVideo": "Vídeo 2",
+      "prompt": "Diseñando un videojuego o experiencia cultural digital, detectas que todos los personajes femeninos quedan en un segundo plano. ¿Qué haces?",
+      "options": [
+        "Impulsar un rediseño de la trama y personajes para eliminar el sesgo.",
+        "Eliminar todos los personajes femeninos.",
+        "Añadir algunos personajes masculinos que también sean secundarios, para compensar.",
+        "Confiar en que la gente en redes no se dé cuenta."
+      ],
+      "correctIndex": 0,
+      "explanation": "El vídeo dice, expresamente: “¡Diseña juegos donde todo el mundo pueda ser el héroe o la heroína!”"
+    },
+    {
+      "id": 8,
+      "orientation": "Motivadora",
+      "sourceVideo": "Vídeo 2",
+      "prompt": "¿Qué harías si te piden diseñar un dataset para entrenar un modelo para usar en videojuegos?",
+      "options": [
+        "Solo tener en cuenta los datos de hombres cis heteros blancos.",
+        "Recopilar todos los datos que encuentre sin criterio alguno.",
+        "Intentar detectar y eliminar o reducir sesgos en el diseño.",
+        "Confiar en datasets similares que encuentre en línea."
+      ],
+      "correctIndex": 2,
+      "explanation": "El vídeo explica que hay muchas formas de eliminar sesgos, desde el diseño de lógica de juego hasta la creación de datasets para IA."
+    }
+  ]
+}

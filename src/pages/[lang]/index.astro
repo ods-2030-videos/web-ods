@@ -1,0 +1,88 @@
+---
+import OverviewSection from '../../components/OverviewSection.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import Layout from '../../layouts/Layout.astro';
+import {
+  getHomeCards,
+  getLocaleConfig,
+  getStaticLanguagePaths,
+  siteMetrics,
+} from '../../utils/site.js';
+
+export function getStaticPaths() {
+  return getStaticLanguagePaths();
+}
+
+const lang = Astro.params.lang;
+const locale = getLocaleConfig(lang);
+const cards = getHomeCards(locale, lang);
+---
+
+<Layout
+  lang={locale.htmlLang}
+  title={locale.siteTitle}
+  description={locale.seoDescription}
+  assetBase="../"
+>
+  <main class="hero shell">
+    <div class="hero__frame card">
+      <SiteHeader locale={locale} lang={lang} activePage="home" />
+
+      <div class="hero__content">
+        <span class="eyebrow">{locale.heroEyebrow}</span>
+        <h1 class="hero__title">{locale.heroTitle}</h1>
+        <p class="hero__lead">{locale.heroLead}</p>
+        {locale.heroNote && <p class="hero__note">{locale.heroNote}</p>}
+
+        <div class="stats" aria-label={locale.home.title}>
+          <div class="stat">
+            <strong>{siteMetrics.coveredGoals}</strong>
+            <span>{locale.labels.coveredGoals}</span>
+          </div>
+          <div class="stat">
+            <strong>{siteMetrics.totalVideos}</strong>
+            <span>{locale.labels.publicAndPlannedVideos}</span>
+          </div>
+          <div class="stat">
+            <strong>{siteMetrics.questionBank}</strong>
+            <span>{locale.labels.questionBank}</span>
+          </div>
+          <div class="stat">
+            <strong>{siteMetrics.deepeningResources}</strong>
+            <span>{locale.labels.deepeningResources}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section shell">
+    <div class="section-heading">
+      <h2>{locale.home.title}</h2>
+      {locale.home.lead && <p>{locale.home.lead}</p>}
+    </div>
+
+    <div class="page-grid">
+      {cards.map((card) => (
+        <article class="page-card card">
+          <span class="eyebrow">{card.eyebrow}</span>
+          <h3>{card.title}</h3>
+          <p>{card.lead}</p>
+          <p class="page-card__actions">
+            <a class="action-link" href={card.href}>
+              {locale.labels.openSection}
+            </a>
+          </p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <OverviewSection locale={locale} />
+
+  {locale.footer && (
+    <footer class="footer shell">
+      <p>{locale.footer}</p>
+    </footer>
+  )}
+</Layout>

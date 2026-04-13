@@ -1,0 +1,360 @@
+[
+  {
+    "id": "4",
+    "title": "Educación de calidad",
+    "items": [
+      {
+        "title": "Educación – Desarrollo Sostenible (Naciones Unidas)",
+        "url": "https://www.un.org/sustainabledevelopment/es/education/",
+        "difficulty": "Introductorio",
+        "time": "8 minutos",
+        "summary": "Página oficial de la ONU que explica qué es el ODS 4, sus metas principales, los avances logrados y los desafíos pendientes (84 millones de niños sin escolarizar en 2030, 300 millones sin competencias básicas). Incluye infografías y datos actualizados."
+      },
+      {
+        "title": "ODS 4 – Agenda 2030 América Latina y el Caribe (CEPAL)",
+        "url": "https://agenda2030lac.org/es/ods/4-educacion-de-calidad",
+        "difficulty": "Divulgación tecnológica",
+        "time": "10 minutos",
+        "summary": "Análisis regional del ODS 4 con enfoque en los desafíos de América Latina y el Caribe: deserción escolar, formación docente, brechas de género y oportunidades de la revolución digital en educación."
+      },
+      {
+        "title": "Informe GEM 2023: Tecnología en la educación – UNESCO",
+        "url": "https://www.unesco.org/gem-report/sites/default/files/medias/fichiers/2023/07/2023reportflyer_SP.pdf",
+        "difficulty": "Divulgación tecnológica",
+        "time": "12 minutos",
+        "summary": "Resumen del informe de seguimiento mundial de la educación de la UNESCO, centrado en el papel de la tecnología digital en el aula. Analiza tanto sus beneficios (acceso a recursos, aprendizaje personalizado) como sus riesgos (vigilancia de datos, brechas digitales, falta de formación docente)."
+      },
+      {
+        "title": "Brecha digital en educación y PISA 2025 – Millcayac/Redalyc",
+        "url": "https://www.redalyc.org/journal/5258/525881400008/html/",
+        "difficulty": "Documento técnico",
+        "time": "20 minutos",
+        "summary": "Artículo académico que analiza cómo la introducción del pensamiento computacional en PISA 2025 puede profundizar las desigualdades educativas entre países con distinto acceso digital. Propone medidas de inversión e infraestructura para reducir estas brechas."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Igualdad de género",
+    "subtopics": [
+      {
+        "title": "Subtema 1: Sesgos de género en IA y selección de personal",
+        "items": [
+          {
+            "title": "Cómo la inteligencia artificial refuerza los sesgos de género y qué podemos hacer al respecto (ONU Mujeres)",
+            "url": "https://www.unwomen.org/es/noticias/entrevista/2025/02/como-la-inteligencia-artificial-refuerza-los-sesgos-de-genero-y-que-podemos-hacer-al-respecto",
+            "difficulty": "Introductorio",
+            "time": "12 minutos",
+            "summary": "Entrevista de ONU Mujeres que explica, con ejemplos claros, cómo los sistemas de IA pueden amplificar desigualdades de género en decisiones de contratación, crédito o justicia si se entrenan con datos históricos sesgados, y propone recomendaciones para diseñar IA ética e inclusiva."
+          },
+          {
+            "title": "Inteligencia artificial con sesgos reales: nuevos retos para la igualdad de género en América Latina y el Caribe (PNUD)",
+            "url": "https://www.undp.org/es/latin-america/blog/inteligencia-artificial-con-sesgos-reales-nuevos-retos-para-la-igualdad-de-genero-en-america-latina-y-el-caribe",
+            "difficulty": "Divulgación tecnológica",
+            "time": "12 minutos",
+            "summary": "Artículo del PNUD que analiza cómo la IA se usa ya en becas, subsidios y servicios sociales en la región, y cómo los sesgos de género en los datos pueden excluir a mujeres pobres, indígenas o migrantes, convirtiéndose en un problema de desarrollo y de confianza institucional."
+          },
+          {
+            "title": "Inteligencia artificial, género y trabajo (Consejo Andaluz de Relaciones Laborales)",
+            "url": "https://www.derechosdigitales.gob.es/es/novedades/inteligencia-artificial-genero-y-trabajo",
+            "difficulty": "Documento técnico",
+            "time": "35 minutos",
+            "summary": "Estudio jurídico que describe cómo algoritmos de evaluación del rendimiento, asignación de tareas o control horario pueden deshumanizar relaciones laborales y perjudicar más a las mujeres, y plantea la necesidad de supervisión humana, auditorías algorítmicas y perspectiva de género en la gestión del trabajo digital."
+          },
+          {
+            "title": "El uso de la IA en la gestión de personas exige nuevas garantías para evitar sesgos de género (Garrigues)",
+            "url": "https://bloglaboral.garrigues.com/el-uso-de-la-ia-en-la-gestion-de-personas-exige-nuevas-garantias-para-evitar-sesgos-de-genero",
+            "difficulty": "Divulgación tecnológica",
+            "time": "10 minutos",
+            "summary": "Artículo que resume los riesgos de usar IA en selección, promoción y salarios cuando los modelos aprenden de historiales laborales discriminatorios, y explica qué obligaciones impone el marco europeo y español para auditar estos sistemas y proteger la igualdad."
+          },
+          {
+            "title": "Examining potential gender bias in automated-job alerts in the Spanish market (PLOS ONE)",
+            "url": "https://journals.plos.org/plosone/article/file?type=printable&id=10.1371%2Fjournal.pone.0260409",
+            "difficulty": "Documento técnico",
+            "time": "40 minutos",
+            "summary": "Artículo académico de la Universidad de Deusto que analiza más de 3.400 ofertas generadas automáticamente por InfoJobs para detectar posibles sesgos de género en alertas de empleo, describiendo la metodología de correspondencia experimental y discutiendo implicaciones para plataformas digitales de empleo."
+          }
+        ]
+      },
+      {
+        "title": "Subtema 2: Brecha de género en la industria del videojuego y STEM digital",
+        "items": [
+          {
+            "title": "Los videojuegos: un mundo de roles, estereotipos y prejuicios (ULPGC)",
+            "url": "https://eldigital.ulpgc.es/noticia/2020/02/17/los-videojuegos-un-mundo-de-roles-estereotipos-y-prejuicios",
+            "difficulty": "Introductorio",
+            "time": "8 minutos",
+            "summary": "Reportaje que presenta el estudio “Género, gamers y videojuegos” y muestra cómo las jugadoras sufren comportamientos sexistas, roles cosificadores y discriminación en el sector, pero también oportunidades para transformar estas narrativas desde el diseño de juegos."
+          },
+          {
+            "title": "Videojuegos y socialización diferencial de género: preferencias y estereotipos en alumnado de primaria (Universidad de Vigo)",
+            "url": "https://revistas.uvigo.es/index.php/ijmc/article/download/3895/3280/8110",
+            "difficulty": "Documento técnico",
+            "time": "35 minutos",
+            "summary": "Investigación con alumnado de 11–12 años que analiza qué videojuegos consumen, cómo se distribuyen por género y qué estereotipos transmiten, vinculando las preferencias de juego con la socialización sexista y la necesidad de una mirada coeducativa sobre los contenidos digitales."
+          },
+          {
+            "title": "Women in Video Games: An Analysis of the Biased Representation in Spanish Mainstream Titles",
+            "url": "https://d-nb.info/135466275X/34",
+            "difficulty": "Documento técnico",
+            "time": "45 minutos",
+            "summary": "Estudio de carácter cuantitativo y cualitativo sobre 313 personajes en videojuegos mainstream en España, que muestra la infrarrepresentación de mujeres como protagonistas, su relegación a roles secundarios y la persistencia de cuerpos irreales y actitudes sumisas."
+          },
+          {
+            "title": "The Representation of Women in Video Games: A Critical Analysis of Gender Stereotypes",
+            "url": "https://researchcorridor.org/index.php/jgpst/article/view/335",
+            "difficulty": "Documento técnico",
+            "time": "40 minutos",
+            "summary": "Artículo en inglés que revisa la evolución de los personajes femeninos desde figuras hipersexualizadas a representaciones más diversas, y analiza cómo estas imágenes influyen en la construcción de la identidad y en la percepción de las mujeres jugadoras."
+          },
+          {
+            "title": "Girls’ and women’s education in STEM (UNESCO)",
+            "url": "https://www.unesco.org/en/gender-equality/education/stem",
+            "difficulty": "Divulgación tecnológica",
+            "time": "10 minutos",
+            "summary": "Síntesis de la brecha de género en estudios STEM: solo el 35% de graduados son mujeres, lo que reduce su presencia en carreras de futuro como la informática y el diseño de videojuegos, e incluye recomendaciones de política educativa para revertir esta situación."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Energía asequible y no contaminante",
+    "items": [
+      {
+        "title": "Energía – Desarrollo Sostenible (Naciones Unidas)",
+        "url": "https://www.un.org/sustainabledevelopment/es/energy/",
+        "difficulty": "Introductorio",
+        "time": "8 minutos",
+        "summary": "Página oficial de la ONU sobre el ODS 7: metas, datos clave y acciones ciudadanas. Explica la relación entre la dependencia de combustibles fósiles, el cambio climático y la necesidad de energías renovables, en un lenguaje accesible para todo público."
+      },
+      {
+        "title": "Los centros de datos ante el reto energético que definirá el futuro de la IA",
+        "url": "https://www.revistacloudcomputing.com/2026/02/los-centros-de-datos-ante-el-reto-energetico-que-definira-el-futuro-de-la-ia/#mas-potencia-mas-densidad-y-menos-margen-de-error",
+        "difficulty": "Divulgación tecnológica",
+        "time": "10 minutos",
+        "summary": "Artículo que explica por qué los centros de datos especializados en IA están disparando su consumo energético (415 TWh en 2024, proyectados a 945 TWh en 2030 según la IEA) y qué estrategias sostenibles están adoptando las grandes tecnológicas."
+      },
+      {
+        "title": "Criptomonedas, la huella de carbono del dinero digital – National Geographic",
+        "url": "https://www.nationalgeographic.com.es/ciencia/criptomonedas-huella-carbono-dinero-digital_16761",
+        "difficulty": "Divulgación tecnológica",
+        "time": "10 minutos",
+        "summary": "Artículo de National Geographic que explica el mecanismo de minería Proof of Work, su impacto en emisiones de CO₂ (hasta 130 millones de toneladas métricas estimadas) y las regulaciones que algunos países ya están aplicando."
+      },
+      {
+        "title": "Impacto ambiental de blockchain y las criptomonedas",
+        "url": "https://dynamicmarkets.substack.com/p/impacto-ambiental-de-blockchain-y",
+        "difficulty": "Documento técnico",
+        "time": "25 minutos",
+        "summary": "Análisis técnico detallado basado en datos del Cambridge Centre for Alternative Finance (CCAF). Compara el consumo energético de Bitcoin (PoW) con Ethereum tras su migración a Proof of Stake (reducción del 99,95%), estima la huella de carbono según el mix energético geográfico de los mineros y discute las limitaciones metodológicas de las estimaciones actuales."
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Trabajo decente y crecimiento económico",
+    "items": [
+      {
+        "title": "Crecimiento económico y trabajo decente – ODS 8 (Naciones Unidas)",
+        "url": "https://www.un.org/sustainabledevelopment/economic-growth/",
+        "difficulty": "Introductorio",
+        "time": "8 minutos",
+        "summary": "Página oficial de la ONU sobre el ODS 8, con datos actualizados sobre empleo informal, crecimiento del PIB per cápita y prioridades para promover trabajo decente, incluyendo la transición justa en un contexto de automatización y digitalización."
+      },
+      {
+        "title": "ODS 8: Trabajo decente y crecimiento económico (Pacto Mundial ONU España)",
+        "url": "https://www.pactomundial.org/ods/8-trabajo-decente-y-crecimiento-economico/",
+        "difficulty": "Introductorio",
+        "time": "12 minutos",
+        "summary": "Ficha divulgativa que explica metas y cifras clave del ODS 8 (paro juvenil, informalidad, brecha salarial) y propone líneas de acción para empresas, como plataformas de monitoreo, innovación tecnológica responsable y apoyo al emprendimiento inclusivo."
+      },
+      {
+        "title": "El trabajo a través de las plataformas digitales laborales en España (SEPE – Cuadernos de Mercado de Trabajo)",
+        "url": "https://www.sepe.es/dam/jcr%3A092eebdc-0c83-49c8-a094-099803715dba/RCMT-9.pdf",
+        "difficulty": "Documento técnico",
+        "time": "25 minutos",
+        "summary": "Análisis de las plataformas digitales laborales en España que describe perfiles de trabajadores, condiciones de empleo y déficits de trabajo decente (ingresos bajos, horarios imprevisibles, falta de protección social), muy útil para conectar ODS 8 con economía de plataformas."
+      },
+      {
+        "title": "Marcos de derechos para el trabajo decente en plataformas: insumos para el debate en el contexto de la 113ª Conferencia Internacional del Trabajo (Derechos Digitales)",
+        "url": "https://www.derechosdigitales.org/recursos/marcos-de-derechos-para-el-trabajo-decente-en-plataformas-insumos-para-el-debate-en-el-contexto-de-la-113a-conferencia-internacional-del-trabajo/",
+        "difficulty": "Divulgación tecnológica",
+        "time": "15 minutos",
+        "summary": "Nota técnica ligada a la 113.ª Conferencia Internacional del Trabajo que propone estándares internacionales para garantizar transparencia algorítmica, derechos laborales y protección social en plataformas digitales, ofreciendo un buen puente entre regulación laboral y diseño de sistemas digitales."
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Industria, innovación e infraestructuras",
+    "items": [
+      {
+        "title": "Infraestructura – Desarrollo Sostenible (Naciones Unidas)",
+        "url": "https://www.un.org/sustainabledevelopment/es/infrastructure/",
+        "difficulty": "Introductorio",
+        "time": "8 minutos",
+        "summary": "Página oficial de la ONU sobre el ODS 9: metas, datos clave (más de 4.000 millones de personas sin acceso a internet, industria como motor del 80% del PIB global) y qué medidas pueden tomar ciudadanos, empresas y gobiernos."
+      },
+      {
+        "title": "Así es como la inteligencia artificial anticipa desastres naturales – Hablando en Vidrio",
+        "url": "https://hablandoenvidrio.com/inteligencia-artificial-deteccion-desastres-naturales/",
+        "difficulty": "Divulgación tecnológica",
+        "time": "10 minutos",
+        "summary": "Artículo que recorre casos reales de IA aplicada a la detección temprana de inundaciones (Google Flood Forecasting, con 7 días de antelación), terremotos y huracanes."
+      },
+      {
+        "title": "Algoritmos verdes: la gran oportunidad de España en el sector tecnológico – El Independiente",
+        "url": "https://www.elindependiente.com/futuro/inteligencia-artificial/2024/02/06/algoritmos-verdes-la-gran-oportunidad-de-espana-en-el-sector-tecnologico/",
+        "difficulty": "Divulgación tecnológica",
+        "time": "12 minutos",
+        "summary": "Reportaje que explica en detalle qué son los algoritmos verdes, por qué las TIC podrían consumir el 20% de la energía mundial en 2030 y qué papel juega el Programa Nacional de Algoritmos Verdes de España."
+      },
+      {
+        "title": "Mejores prácticas para el desarrollo de software verde utilizando IA – European Public & Social Innovation Review",
+        "url": "https://epsir.net/index.php/epsir/article/view/436/219",
+        "difficulty": "Documento técnico",
+        "time": "45 minutos",
+        "summary": "Artículo académico (2024) que analiza la relación entre ingeniería de software, sostenibilidad e inteligencia artificial, evaluando el consumo energético de distintos lenguajes de programación. El estudio concluye que lenguajes como Java pueden ser más eficientes que Python y propone metodologías para medir y reducir la huella de carbono del software."
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Ciudades y comunidades sostenibles",
+    "items": [
+      {
+        "title": "Ciudades – Desarrollo Sostenible (Naciones Unidas)",
+        "url": "https://www.un.org/sustainabledevelopment/es/cities/",
+        "difficulty": "Introductorio",
+        "time": "8 minutos",
+        "summary": "Página oficial de la ONU sobre el ODS 11: datos clave (en 2022, solo la mitad de la población urbana tenía acceso al transporte público; las ciudades generan el 70% de las emisiones de carbono) y sus metas principales hasta 2030."
+      },
+      {
+        "title": "ODS 11: Ciudades y comunidades sostenibles – Pacto Mundial ONU",
+        "url": "https://www.pactomundial.org/ods/11-ciudades-y-comunidades-sostenibles/",
+        "difficulty": "Introductorio",
+        "time": "10 minutos",
+        "summary": "Explicación del ODS 11 con foco en el rol de empresas y ciudadanos. Aborda la contaminación del aire (24.000 muertes anuales en España según datos de 2023), la movilidad sostenible, los sistemas IoT para edificios inteligentes y la gestión de residuos."
+      },
+      {
+        "title": "Cloud e IoT en Ciudades Inteligentes: El Futuro de la Gestión Urbana – Cátedra T-Systems × URV",
+        "url": "https://cloudlab.urv.cat/catedracloud/2025/04/02/cloud-e-iot-en-ciudades-inteligentes-el-futuro-de-la-gestion-urbana/",
+        "difficulty": "Divulgación tecnológica",
+        "time": "12 minutos",
+        "summary": "Artículo de 2025 que explica cómo ciudades como Santander (con 20.000 sensores) y Las Rozas integran IoT, edge computing y cloud para gestionar semáforos adaptativos, monitorizar la calidad del aire y optimizar el alumbrado público."
+      },
+      {
+        "title": "Tecnología para una movilidad inteligente – Revista Tráfico y Seguridad Vial (DGT)",
+        "url": "https://revista.dgt.es/es/reportajes/2024/12DICIEMBRE/1712-N272-ITS_MovilidadInteligente.shtml",
+        "difficulty": "Documento técnico",
+        "time": "20 minutos",
+        "summary": "Informe técnico de la DGT (diciembre 2024) sobre los Sistemas Inteligentes de Transporte (ITS) en España: espiras magnéticas, sensores de velocidad, radares de tramo, sistemas LPR, paneles de mensaje variable y Smart Routing."
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Producción y consumo responsable",
+    "items": [
+      {
+        "title": "Producción y Consumo Responsables (Naciones Unidas)",
+        "url": "https://www.un.org/es/impacto-acad%C3%A9mico/page/producci%C3%B3n-y-consumo-responsables",
+        "difficulty": "Introductorio",
+        "time": "10 minutos",
+        "summary": "Introducción general al ODS 12 que explica el objetivo de “hacer más con menos” reduciendo el uso de recursos, la contaminación y los residuos a lo largo del ciclo de vida de productos y servicios, con énfasis en el papel de empresas, consumidores y administraciones."
+      },
+      {
+        "title": "ODS 12: Producción y Consumo Responsables (Cáritas Española – píldora formativa)",
+        "url": "https://www.caritas.es/main-files/uploads/sites/21/2021/03/P%C3%ADldora-12-ODS-12-Producci%C3%B3n-y-Consumo-Responsables.pdf",
+        "difficulty": "Introductorio",
+        "time": "20 minutos",
+        "summary": "Material didáctico que resume las metas del ODS 12 y pone el foco en el desperdicio alimentario y en los desechos electrónicos (50 millones de toneladas anuales), relacionando el consumo tecnológico con la generación de residuos."
+      },
+      {
+        "title": "Qué es la basura tecnológica y cómo reciclarla (Iberdrola)",
+        "url": "https://www.iberdrola.com/sostenibilidad/que-es-basura-tecnologica",
+        "difficulty": "Divulgación tecnológica",
+        "time": "10 minutos",
+        "summary": "Artículo divulgativo sobre e-waste que explica qué son los residuos tecnológicos, por qué superan las 50 millones de toneladas anuales y cómo el ODS 12 exige una gestión ecológicamente racional de estos residuos, con ejemplos de buenas prácticas y circuitos de reciclaje."
+      },
+      {
+        "title": "Estrategias y políticas para la eliminación o reutilización adecuadas de residuos generados por las telecomunicaciones/TIC (UIT)",
+        "url": "https://www.itu.int/dms_pub/itu-d/opb/stg/D-STG-SG02.08.1-2017-PDF-S.pdf",
+        "difficulty": "Documento técnico",
+        "time": "45 minutos",
+        "summary": "Informe técnico de la UIT que recoge requisitos mínimos y guías operativas para la gestión ambientalmente racional de residuos electrónicos procedentes de TIC, incluyendo marcos de política, responsabilidades de los gestores y etapas de la cadena RAEE."
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Acción por el clima",
+    "items": [
+      {
+        "title": "Cambio climático – Acción por el clima (Naciones Unidas)",
+        "url": "https://www.un.org/sustainabledevelopment/es/climate-action/",
+        "difficulty": "Introductorio",
+        "time": "10 minutos",
+        "summary": "Página oficial del ODS 13 que presenta impactos del cambio climático (aumento de temperatura, eventos extremos, afectación a los más vulnerables) y explica el Acuerdo de París y la necesidad de reducir rápidamente las emisiones de gases de efecto invernadero."
+      },
+      {
+        "title": "ODS 13: Acción por el clima (Pacto Mundial ONU España)",
+        "url": "https://www.pactomundial.org/ods/13-accion-por-el-clima/",
+        "difficulty": "Introductorio",
+        "time": "12 minutos",
+        "summary": "Ficha que contextualiza el cambio climático en España (olas de calor, millones de personas afectadas) y detalla cómo empresas y organizaciones pueden integrar la acción climática en sus estrategias, enlazando ODS 13 con otros objetivos."
+      },
+      {
+        "title": "El sector TIC ayuda en la lucha contra el cambio climático (UNFCCC)",
+        "url": "https://unfccc.int/es/news/el-sector-tic-ayuda-en-la-lucha-contra-el-cambio-clim%C3%A1tico",
+        "difficulty": "Divulgación tecnológica",
+        "time": "12 minutos",
+        "summary": "Artículo de ONU Cambio Climático que muestra cómo centros de datos y grandes empresas TIC pueden pasar de ser responsables de alrededor del 2% de las emisiones globales a convertirse en palanca para reducir un 20% de las emisiones mundiales mediante soluciones digitales eficientes."
+      },
+      {
+        "title": "Uso de las TIC para hacer frente al cambio climático (UIT)",
+        "url": "https://www.itu.int/dms_pub/itu-t/oth/0b/11/t0b1100000a3301pdfs.pdf",
+        "difficulty": "Documento técnico",
+        "time": "45 minutos",
+        "summary": "Informe de la UIT que analiza cómo las TIC pueden apoyar los tres pilares del Plan de Acción de Bali (adaptación, mitigación y transferencia tecnológica), cuantificando ahorros potenciales de CO₂ mediante soluciones smart y proponiendo políticas para integrar TIC en estrategias climáticas nacionales."
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Paz, justicia e instituciones sólidas",
+    "items": [
+      {
+        "title": "Paz, justicia e instituciones sólidas – Desarrollo Sostenible (Naciones Unidas)",
+        "url": "https://www.un.org/sustainabledevelopment/es/peace-justice/",
+        "difficulty": "Introductorio",
+        "time": "8 minutos",
+        "summary": "Página oficial de la ONU que explica qué es el ODS 16, sus metas principales sobre el estado de derecho, acceso a la justicia, reducción de la corrupción y construcción de instituciones responsables y transparentes. Incluye datos clave sobre violencia, delincuencia organizada y protección de derechos humanos."
+      },
+      {
+        "title": "Corrupción y fraude elevan su impacto en la economía global (OCDE 2026)",
+        "url": "https://www.emol.com/noticias/Internacional/2026/03/26/1195394/cifras-corrupcion-fraude-ocde-informe.html",
+        "difficulty": "Análisis técnico",
+        "time": "15 minutos",
+        "summary": "Informe actualizado (marzo 2026) sobre lucha contra la corrupción e integridad que revela que la corrupción, el fraude y el crimen organizado cuestan entre 800.000 millones y 2 billones de dólares anuales, y destaca la brecha entre normas anticorrupción y su aplicación efectiva."
+      },
+      {
+        "title": "SATAN/SALER – El algoritmo que localiza corruptos (Universitat Politècnica de València)",
+        "url": "https://valenciaplaza.com/satan-el-nuevo-sistema-de-alertas-de-la-generalitat-para-evitar-casos-de-corrupcion",
+        "difficulty": "Documento técnico",
+        "time": "18 minutos",
+        "summary": "Análisis técnico del desarrollo del algoritmo por parte del profesor César Ferri y su equipo. Explica cómo funciona el cruce de datos del Registro Mercantil y de la Propiedad para generar alertas sospechosas y detalla el proceso de integración con el sistema de alertas de subvenciones y contratos."
+      },
+      {
+        "title": "Voto electrónico en el mundo – Implementación y prohibiciones (Gobierno Vasco)",
+        "url": "https://www.euskadi.eus/informacion/voto-electronico-voto-electronico-en-el-mundo/web01-a2haukon/es/",
+        "difficulty": "Introductorio",
+        "time": "8 minutos",
+        "summary": "Página oficial sobre voto electrónico global. Documenta que solo 7 de 75 democracias puras tienen i-voting implementado. Países como Alemania, Reino Unido e Irlanda lo prohíben por problemas de seguridad, y analiza casos de éxito como Bélgica, Brasil, Estonia y Emiratos Árabes Unidos."
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+---
+import DeepeningSection from '../../components/DeepeningSection.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getLocaleConfig, getStaticLanguagePaths } from '../../utils/site.js';
+
+export function getStaticPaths() {
+  return getStaticLanguagePaths();
+}
+
+const lang = Astro.params.lang;
+const locale = getLocaleConfig(lang);
+---
+
+<Layout
+  lang={locale.htmlLang}
+  title={`${locale.sections.deepeningTitle} | ${locale.siteTitle}`}
+  description={locale.sections.deepeningLead}
+  assetBase="../../"
+>
+  <PageBanner locale={locale} lang={lang} activePage="deepening" />
+  <DeepeningSection locale={locale} />
+</Layout>

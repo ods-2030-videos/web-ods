@@ -1,0 +1,146 @@
+---
+import { videoSections } from '../data/siteData.js';
+
+const { locale } = Astro.props;
+
+function extractYouTubeId(url) {
+  if (!url) return null;
+  const match = url.match(/(?:youtu\.be\/|v=)([A-Za-z0-9_-]{11})/);
+  return match ? match[1] : null;
+}
+
+const videoGroups = videoSections.map((group) => ({
+  ...group,
+  videos: group.videos.map((video) => ({
+    ...video,
+    youtubeId: extractYouTubeId(video.url),
+  })),
+}));
+---
+
+<section class="section shell">
+  <div class="section-heading">
+    <h2>{locale.sections.videosTitle}</h2>
+    <p>{locale.sections.videosLead}</p>
+  </div>
+
+  <div class="accordion-list">
+    {videoGroups.map((group) => (
+      <details class="accordion card" open={group.id === '4'}>
+        <summary>
+          <div class="accordion__title">
+            <strong>
+              ODS {group.id} · {group.title}
+            </strong>
+            <span>
+              {group.planned
+                ? locale.labels.plannedGroup
+                : `${group.videos.length} ${locale.labels.documentedVideos}`}
+            </span>
+          </div>
+
+          {group.groupLink && (
+            <a class="summary-link" href={group.groupLink} target="_blank" rel="noreferrer">
+              {locale.labels.groupLink}
+            </a>
+          )}
+        </summary>
+
+        <div class="accordion__body">
+          {group.note && <p class="section-note">{group.note}</p>}
+
+          <div class="video-grid">
+            {group.videos.map((video) => (
+              <article class="video-card">
+                <div class="video-card__slot">
+                  <span class="meta-pill">{video.slot}</span>
+                  {group.planned && <span class="meta-pill">{locale.labels.plannedVideo}</span>}
+                </div>
+
+                <h3>{video.title}</h3>
+
+                {video.youtubeId && (
+                  <div class="video-shell" data-video-id={video.youtubeId} data-title={video.title}>
+                    <button class="video-launch" type="button">
+                      <span>
+                        <strong>{locale.labels.launchVideo}</strong>
+                        <small>{video.title}</small>
+                      </span>
+                    </button>
+                  </div>
+                )}
+
+                {!video.youtubeId && (
+                  <p class="section-note">
+                    {locale.labels.noPublicUrl}. {locale.labels.plannedNote}
+                  </p>
+                )}
+
+                <dl class="meta-list">
+                  <div class="meta-item">
+                    <dt>{locale.labels.authors}</dt>
+                    <dd>{video.authors ?? locale.labels.authorsUnknown}</dd>
+                  </div>
+
+                  {video.subtitles && (
+                    <div class="meta-item">
+                      <dt>{locale.labels.subtitles}</dt>
+                      <dd>{video.subtitles}</dd>
+                    </div>
+                  )}
+
+                  {video.character && (
+                    <div class="meta-item">
+                      <dt>{locale.labels.character}</dt>
+                      <dd>{video.character}</dd>
+                    </div>
+                  )}
+
+                  {video.license && (
+                    <div class="meta-item">
+                      <dt>{locale.labels.license}</dt>
+                      <dd>
+                        <a href={video.licenseUrl} target="_blank" rel="noreferrer">
+                          {video.license}
+                        </a>
+                      </dd>
+                    </div>
+                  )}
+                </dl>
+
+                {video.url && (
+                  <p class="resource-card__actions">
+                    <a class="action-link" href={video.url} target="_blank" rel="noreferrer">
+                      {locale.labels.watch}
+                    </a>
+                  </p>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+      </details>
+    ))}
+  </div>
+
+  <script>
+    document.querySelectorAll('.video-shell').forEach((shell) => {
+      const button = shell.querySelector('.video-launch');
+      if (!button) return;
+      button.addEventListener('click', () => {
+        const videoId = shell.getAttribute('data-video-id');
+        const title = shell.getAttribute('data-title') || 'Video';
+        if (!videoId) return;
+        shell.innerHTML = '';
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+        iframe.title = title;
+        iframe.loading = 'lazy';
+        iframe.allow =
+          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        shell.appendChild(iframe);
+      });
+    });
+  </script>
+</section>

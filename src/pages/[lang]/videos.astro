@@ -1,0 +1,23 @@
+---
+import PageBanner from '../../components/PageBanner.astro';
+import VideosSection from '../../components/VideosSection.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getLocaleConfig, getStaticLanguagePaths } from '../../utils/site.js';
+
+export function getStaticPaths() {
+  return getStaticLanguagePaths();
+}
+
+const lang = Astro.params.lang;
+const locale = getLocaleConfig(lang);
+---
+
+<Layout
+  lang={locale.htmlLang}
+  title={`${locale.sections.videosTitle} | ${locale.siteTitle}`}
+  description={locale.sections.videosLead}
+  assetBase="../../"
+>
+  <PageBanner locale={locale} lang={lang} activePage="videos" />
+  <VideosSection locale={locale} />
+</Layout>

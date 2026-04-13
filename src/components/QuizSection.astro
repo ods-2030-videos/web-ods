@@ -1,0 +1,165 @@
+---
+import { quiz } from '../data/siteData.js';
+
+const { locale } = Astro.props;
+
+const quizPayload = JSON.stringify({
+  questions: quiz.questions,
+  categories: quiz.categories,
+  ui: locale.quizUi,
+  labels: locale.labels,
+  bankNote: quiz.bankNote,
+});
+---
+
+<section class="section shell">
+  <div class="section-heading">
+    <h2>{locale.sections.quizTitle}</h2>
+    <p>{locale.sections.quizLead}</p>
+  </div>
+
+  <div class="quiz-layout card">
+    <div class="accordion__body">
+      <article class="quiz-card">
+        <h3>{locale.labels.sourceMaterial}</h3>
+        <p>{quiz.bankNote}</p>
+        <p class="section-note">{locale.labels.quizSource}</p>
+      </article>
+
+      <div class="quiz-controls">
+        <button class="quiz-button" id="start-quiz" type="button">
+          {locale.labels.startQuiz}
+        </button>
+        <button class="quiz-button is-secondary" id="shuffle-quiz" type="button">
+          {locale.labels.reshuffleQuiz}
+        </button>
+        <button class="quiz-button is-secondary" id="submit-quiz" type="button">
+          {locale.labels.submitQuiz}
+        </button>
+      </div>
+
+      <p class="section-note">{locale.quizUi.selectedModel}</p>
+      <div id="quiz-panel" class="quiz-panel"></div>
+      <div id="quiz-results" class="quiz-results"></div>
+    </div>
+  </div>
+
+  <script type="application/json" id="quiz-data" set:html={quizPayload}></script>
+  <script>
+    const quizDataElement = document.getElementById('quiz-data');
+    const quizData = quizDataElement ? JSON.parse(quizDataElement.textContent || '{}') : null;
+
+    if (quizData) {
+      const startButton = document.getElementById('start-quiz');
+      const shuffleButton = document.getElementById('shuffle-quiz');
+      const submitButton = document.getElementById('submit-quiz');
+      const panel = document.getElementById('quiz-panel');
+      const results = document.getElementById('quiz-results');
+
+      const informativeQuestions = quizData.questions.filter((question) => question.orientation === 'Informativa');
+      const motivationalQuestions = quizData.questions.filter((question) => question.orientation === 'Motivadora');
+
+      let activeQuestions = [];
+
+      const shuffle = (items) => {
+        const clone = [...items];
+        for (let i = clone.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [clone[i], clone[j]] = [clone[j], clone[i]];
+        }
+        return clone;
+      };
+
+      const buildQuestionCard = (question, index) => {
+        const article = document.createElement('article');
+        article.className = 'question-card';
+        article.innerHTML = `
+          <div class="quiz-meta">
+            <span class="meta-pill">${quizData.labels.orientation}: ${question.orientation === 'Informativa' ? quizData.ui.informative : quizData.ui.motivational}</span>
+            <span class="meta-pill">${question.sourceVideo}</span>
+          </div>
+          <h3>${index + 1}. ${question.prompt}</h3>
+          <div class="option-list">
+            ${question.options
+              .map(
+                (option, optionIndex) => `
+                  <label class="option">
+                    <input type="radio" name="question-${question.id}" value="${optionIndex}" />
+                    <span>${option}</span>
+                  </label>
+                `,
+              )
+              .join('')}
+          </div>
+        `;
+        return article;
+      };
+
+      const renderAttempt = () => {
+        activeQuestions = [
+          ...shuffle(informativeQuestions).slice(0, 2),
+          ...shuffle(motivationalQuestions).slice(0, 3),
+        ];
+        activeQuestions = shuffle(activeQuestions);
+
+        panel.innerHTML = '';
+        results.innerHTML = '';
+        activeQuestions.forEach((question, index) => panel.appendChild(buildQuestionCard(question, index)));
+      };
+
+      const getCategory = (score) =>
+        quizData.categories.find((category) => score >= category.min && score <= category.max);
+
+      const evaluateAttempt = () => {
+        const answers = [];
+        for (const question of activeQuestions) {
+          const selected = document.querySelector(`input[name="question-${question.id}"]:checked`);
+          if (!selected) {
+            results.innerHTML = `<article class="feedback-item"><strong>${quizData.ui.missingAnswers}</strong></article>`;
+            return;
+          }
+          answers.push({ question, value: Number(selected.value) });
+        }
+
+        const wrongAnswers = answers.filter((entry) => entry.value !== entry.question.correctIndex);
+        const score = answers.length - wrongAnswers.length;
+        const category = getCategory(score);
+
+        const wrongMarkup = wrongAnswers.length
+          ? `
+            <div class="feedback-list">
+              ${wrongAnswers
+                .map(
+                  (entry) => `
+                    <article class="feedback-item">
+                      <strong>${entry.question.prompt}</strong>
+                      <p>${entry.question.explanation}</p>
+                      <p><strong>${quizData.labels.correctAnswer}:</strong> ${entry.question.options[entry.question.correctIndex]}</p>
+                    </article>
+                  `,
+                )
+                .join('')}
+            </div>
+          `
+          : `<article class="feedback-item"><p>${quizData.labels.noFailedQuestions}</p></article>`;
+
+        results.innerHTML = `
+          <div class="result-highlight">
+            <strong>${score} / ${answers.length}</strong>
+            <p><strong>${quizData.labels.resultCategory}:</strong> ${category.label}</p>
+            <p>${category.text}</p>
+          </div>
+          <div>
+            <h3>${quizData.labels.wrongAnswers}</h3>
+            ${wrongMarkup}
+          </div>
+        `;
+      };
+
+      startButton?.addEventListener('click', renderAttempt);
+      shuffleButton?.addEventListener('click', renderAttempt);
+      submitButton?.addEventListener('click', evaluateAttempt);
+      renderAttempt();
+    }
+  </script>
+</section>
