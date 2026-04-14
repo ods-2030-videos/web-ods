@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bdescalzo.github.io',
-  base: '/pagina_astro/',
+  site: 'https://ods-2030-videos.github.io',
+  base: '/web-ods/',
   build: {
     inlineStylesheets: 'always',
   },
