@@ -2,6 +2,7 @@
 
 Web estática en Astro preparada para desplegarse en GitHub Pages y editarse con Pages CMS.
 
+
 ## Desarrollo
 
 ```sh
