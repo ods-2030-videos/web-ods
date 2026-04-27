@@ -39,6 +39,7 @@ const englishTranslations = {
   'Infografía sobre contratación justa': 'Infographic about fair hiring',
   'Level Up: Igualdad de Género en el Diseño de Videojuegos':
     'Level Up: Gender Equality in Video Game Design',
+  'Infografía sobre Level Up': 'Infographic about Level Up',
   'Sesgos algorítmicos': 'Algorithmic bias',
   'Redes sociales y estereotipos de género: un reto para la igualdad':
     'Social media and gender stereotypes: a challenge for equality',

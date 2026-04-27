@@ -73,7 +73,11 @@
         "license": "CC-BY-NC-SA",
         "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es",
         "subtitles": "español, inglés, euskera",
-        "character": "Motivador"
+        "character": "Motivador",
+        "infographic": {
+          "src": "infografia-level-up.jpeg",
+          "alt": "Infografía sobre Level Up"
+        }
       },
       {
         "slot": "Vídeo 3",
