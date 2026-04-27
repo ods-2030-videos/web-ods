@@ -1,5 +1,6 @@
 ---
 import { videoSections } from '../data/siteData.js';
+import { localizeContent } from '../utils/contentTranslations.js';
 
 const { locale } = Astro.props;
 
@@ -9,7 +10,7 @@ function extractYouTubeId(url) {
   return match ? match[1] : null;
 }
 
-const videoGroups = videoSections.map((group) => ({
+const videoGroups = localizeContent(videoSections, locale).map((group) => ({
   ...group,
   videos: group.videos.map((video) => ({
     ...video,
@@ -30,7 +31,7 @@ const videoGroups = videoSections.map((group) => ({
         <summary>
           <div class="accordion__title">
             <strong>
-              ODS {group.id} · {group.title}
+              {locale.labels.goalPrefix} {group.id} · {group.title}
             </strong>
             <span>
               {group.planned

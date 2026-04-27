@@ -49,16 +49,30 @@
   {
     "id": "5",
     "title": "Igualdad de género",
-    "planned": true,
-    "note": "Actualmente no hay enlaces públicos disponibles para los dos vídeos previstos del ODS 5.",
     "videos": [
       {
-        "slot": "Guion / vídeo previsto 1",
-        "title": "Contratación justa y sesgos algorítmicos"
+        "slot": "Vídeo 1",
+        "title": "Contratación justa: reescribiendo los algoritmos que discriminan a las mujeres",
+        "url": "https://www.youtube.com/watch?v=ZyouRfAEeqs",
+        "authors": "Ada Byron"
       },
       {
-        "slot": "Guion / vídeo previsto 2",
-        "title": "Igualdad de género en el diseño de videojuegos"
+        "slot": "Vídeo 2",
+        "title": "Level Up: Igualdad de Género en el Diseño de Videojuegos",
+        "url": "https://www.youtube.com/watch?v=uU1PmPORTGE",
+        "authors": "Ada Byron"
+      },
+      {
+        "slot": "Vídeo 3",
+        "title": "Sesgos algorítmicos",
+        "url": "https://www.youtube.com/watch?v=9KXc_eI3oG0",
+        "authors": "Barbara Lyskov"
+      },
+      {
+        "slot": "Vídeo 4",
+        "title": "Redes sociales y estereotipos de género: un reto para la igualdad",
+        "url": "https://www.youtube.com/watch?v=VeFVTi7E9lw",
+        "authors": "Barbara Lyskov"
       }
     ]
   },

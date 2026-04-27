@@ -1,7 +1,9 @@
 ---
 import { deepeningSections } from '../data/siteData.js';
+import { localizeContent } from '../utils/contentTranslations.js';
 
 const { locale } = Astro.props;
+const localizedDeepeningSections = localizeContent(deepeningSections, locale);
 ---
 
 <section class="section shell">
@@ -11,12 +13,12 @@ const { locale } = Astro.props;
   </div>
 
   <div class="accordion-list">
-    {deepeningSections.map((section) => (
+    {localizedDeepeningSections.map((section) => (
       <details class="accordion card" open={section.id === '5'}>
         <summary>
           <div class="accordion__title">
             <strong>
-              ODS {section.id} · {section.title}
+              {locale.labels.goalPrefix} {section.id} · {section.title}
             </strong>
             <span>
               {section.subtopics

@@ -1,14 +1,16 @@
 ---
 import { quiz } from '../data/siteData.js';
+import { localizeContent } from '../utils/contentTranslations.js';
 
 const { locale } = Astro.props;
+const localizedQuiz = localizeContent(quiz, locale);
 
 const quizPayload = JSON.stringify({
-  questions: quiz.questions,
-  categories: quiz.categories,
+  questions: localizedQuiz.questions,
+  categories: localizedQuiz.categories,
   ui: locale.quizUi,
   labels: locale.labels,
-  bankNote: quiz.bankNote,
+  bankNote: localizedQuiz.bankNote,
 });
 ---
 
@@ -22,7 +24,7 @@ const quizPayload = JSON.stringify({
     <div class="accordion__body">
       <article class="quiz-card">
         <h3>{locale.labels.sourceMaterial}</h3>
-        <p>{quiz.bankNote}</p>
+        <p>{localizedQuiz.bankNote}</p>
         <p class="section-note">{locale.labels.quizSource}</p>
       </article>
 
@@ -56,8 +58,12 @@ const quizPayload = JSON.stringify({
       const panel = document.getElementById('quiz-panel');
       const results = document.getElementById('quiz-results');
 
-      const informativeQuestions = quizData.questions.filter((question) => question.orientation === 'Informativa');
-      const motivationalQuestions = quizData.questions.filter((question) => question.orientation === 'Motivadora');
+      const informativeQuestions = quizData.questions.filter(
+        (question) => question.orientation === quizData.ui.informative,
+      );
+      const motivationalQuestions = quizData.questions.filter(
+        (question) => question.orientation === quizData.ui.motivational,
+      );
 
       let activeQuestions = [];
 
@@ -75,7 +81,7 @@ const quizPayload = JSON.stringify({
         article.className = 'question-card';
         article.innerHTML = `
           <div class="quiz-meta">
-            <span class="meta-pill">${quizData.labels.orientation}: ${question.orientation === 'Informativa' ? quizData.ui.informative : quizData.ui.motivational}</span>
+            <span class="meta-pill">${quizData.labels.orientation}: ${question.orientation}</span>
             <span class="meta-pill">${question.sourceVideo}</span>
           </div>
           <h3>${index + 1}. ${question.prompt}</h3>

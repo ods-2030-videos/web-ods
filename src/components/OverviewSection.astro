@@ -1,7 +1,9 @@
 ---
 import { odsCatalog } from '../data/siteData.js';
+import { localizeContent } from '../utils/contentTranslations.js';
 
 const { locale } = Astro.props;
+const localizedOdsCatalog = localizeContent(odsCatalog, locale);
 ---
 
 <section class="section shell">
@@ -11,7 +13,7 @@ const { locale } = Astro.props;
   </div>
 
   <div class="ods-grid">
-    {odsCatalog.map((ods) => (
+    {localizedOdsCatalog.map((ods) => (
       <article class="ods-card card">
         <strong>{ods.id}</strong>
         <span>{ods.name}</span>
