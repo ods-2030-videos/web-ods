@@ -17,6 +17,7 @@ const locale = getLocaleConfig(lang);
   title={`${locale.sections.quizTitle} | ${locale.siteTitle}`}
   description={locale.sections.quizLead}
   assetBase="../../"
+  footer={locale.footer}
 >
   <PageBanner locale={locale} lang={lang} activePage="quiz" />
   <QuizSection locale={locale} />

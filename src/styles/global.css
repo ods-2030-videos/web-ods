@@ -638,8 +638,32 @@ img {
 }
 
 .footer {
+  display: grid;
+  gap: 0.45rem;
   padding: 0 0 2.5rem;
   color: var(--ink-soft);
+}
+
+.footer h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: 'Baskerville', 'Palatino Linotype', serif;
+  font-size: 1.35rem;
+}
+
+.footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--accent-strong);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.footer__license-code {
+  font-weight: 700;
 }
 
 @media (max-width: 720px) {

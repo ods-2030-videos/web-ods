@@ -23,6 +23,7 @@ const cards = getHomeCards(locale, lang);
   title={locale.siteTitle}
   description={locale.seoDescription}
   assetBase="../"
+  footer={locale.footer}
 >
   <main class="hero shell">
     <div class="hero__frame card">
@@ -79,10 +80,4 @@ const cards = getHomeCards(locale, lang);
   </section>
 
   <OverviewSection locale={locale} />
-
-  {locale.footer && (
-    <footer class="footer shell">
-      <p>{locale.footer}</p>
-    </footer>
-  )}
 </Layout>

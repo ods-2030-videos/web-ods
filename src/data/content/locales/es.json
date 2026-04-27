@@ -75,5 +75,13 @@
     "title": "Apartados principales",
     "lead": ""
   },
-  "footer": ""
+  "footer": {
+    "title": "Licencia Creative Commons",
+    "shortName": "CC BY-NC-SA 4.0 Internacional",
+    "licensePrefix": "Este sitio web está licenciado bajo ",
+    "licenseName": "Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es",
+    "thirdPartyLicenses": "Todos los contenidos de terceros mantienen sus licencias originales.",
+    "usageVerification": "Se ha verificado que todas las obras utilizadas permiten uso no comercial y distribución."
+  }
 }
