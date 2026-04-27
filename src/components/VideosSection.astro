@@ -61,13 +61,14 @@ const videoGroups = localizeContent(videoSections, locale).map((group) => ({
                 <h3>{video.title}</h3>
 
                 {video.youtubeId && (
-                  <div class="video-shell" data-video-id={video.youtubeId} data-title={video.title}>
-                    <button class="video-launch" type="button">
-                      <span>
-                        <strong>{locale.labels.launchVideo}</strong>
-                        <small>{video.title}</small>
-                      </span>
-                    </button>
+                  <div class="video-shell">
+                    <iframe
+                      src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`}
+                      title={video.title}
+                      loading="lazy"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                   </div>
                 )}
 
@@ -123,25 +124,4 @@ const videoGroups = localizeContent(videoSections, locale).map((group) => ({
       </details>
     ))}
   </div>
-
-  <script>
-    document.querySelectorAll('.video-shell').forEach((shell) => {
-      const button = shell.querySelector('.video-launch');
-      if (!button) return;
-      button.addEventListener('click', () => {
-        const videoId = shell.getAttribute('data-video-id');
-        const title = shell.getAttribute('data-title') || 'Video';
-        if (!videoId) return;
-        shell.innerHTML = '';
-        const iframe = document.createElement('iframe');
-        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
-        iframe.title = title;
-        iframe.loading = 'lazy';
-        iframe.allow =
-          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-        iframe.allowFullscreen = true;
-        shell.appendChild(iframe);
-      });
-    });
-  </script>
 </section>
