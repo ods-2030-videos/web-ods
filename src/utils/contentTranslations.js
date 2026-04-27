@@ -36,6 +36,7 @@ const englishTranslations = {
   'Educación con la tecnología': 'Education with technology',
   'Contratación justa: reescribiendo los algoritmos que discriminan a las mujeres':
     'Fair hiring: rewriting the algorithms that discriminate against women',
+  'Infografía sobre contratación justa': 'Infographic about fair hiring',
   'Level Up: Igualdad de Género en el Diseño de Videojuegos':
     'Level Up: Gender Equality in Video Game Design',
   'Sesgos algorítmicos': 'Algorithmic bias',
@@ -427,4 +428,3 @@ export function localizeContent(value, locale) {
 
   return translateContentText(value, locale);
 }
-

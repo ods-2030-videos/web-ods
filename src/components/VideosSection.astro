@@ -10,6 +10,15 @@ function extractYouTubeId(url) {
   return match ? match[1] : null;
 }
 
+function getAssetUrl(path) {
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  const normalizedPath = path.replace(/^\/+/, '');
+
+  return `${base}${normalizedPath}`;
+}
+
 const videoGroups = localizeContent(videoSections, locale).map((group) => ({
   ...group,
   videos: group.videos.map((video) => ({
@@ -70,6 +79,23 @@ const videoGroups = localizeContent(videoSections, locale).map((group) => ({
                       allowfullscreen
                     ></iframe>
                   </div>
+                )}
+
+                {video.infographic && (
+                  <a
+                    class="video-infographic"
+                    href={getAssetUrl(video.infographic.src)}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={video.infographic.alt}
+                  >
+                    <img
+                      src={getAssetUrl(video.infographic.src)}
+                      alt={video.infographic.alt}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
                 )}
 
                 {!video.youtubeId && (

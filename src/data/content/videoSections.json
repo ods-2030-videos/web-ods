@@ -59,7 +59,11 @@
         "license": "CC-BY-NC-SA",
         "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es",
         "subtitles": "español, inglés, euskera",
-        "character": "Mixto"
+        "character": "Mixto",
+        "infographic": {
+          "src": "infografia-contratacion-justa.jpeg",
+          "alt": "Infografía sobre contratación justa"
+        }
       },
       {
         "slot": "Vídeo 2",
