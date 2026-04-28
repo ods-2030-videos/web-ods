@@ -309,8 +309,8 @@ const englishTranslations = {
   'Página oficial sobre voto electrónico global. Documenta que solo 7 de 75 democracias puras tienen i-voting implementado. Países como Alemania, Reino Unido e Irlanda lo prohíben por problemas de seguridad, y analiza casos de éxito como Bélgica, Brasil, Estonia y Emiratos Árabes Unidos.':
     'Official page on global electronic voting. It documents that only 7 of 75 full democracies have implemented i-voting. Countries such as Germany, the United Kingdom and Ireland ban it for security reasons, and it analyzes success cases such as Belgium, Brazil, Estonia and the United Arab Emirates.',
 
-  'La autoevaluación del ODS 5 parte de un banco de 8 preguntas y cada intento selecciona 5: 2 informativas y 3 motivadoras.':
-    'The SDG 5 self-assessment starts from a bank of 8 questions, and each attempt selects 5: 2 informative and 3 motivational.',
+  'Cada intento de la autoevaluación del ODS 5 consiste en 8 preguntas.':
+    'Each SDG 5 self-assessment attempt consists of 8 questions.',
   'Informativa': 'Informative',
   'Motivadora': 'Motivational',
   'No concienciado': 'Not yet aware',

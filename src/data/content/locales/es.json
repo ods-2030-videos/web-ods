@@ -20,7 +20,7 @@
     "videosTitle": "Apartado de vídeos",
     "videosLead": "Cada bloque reúne vídeos relacionados con cada ODS, con autores, licencia, subtítulos y carácter.",
     "quizTitle": "Autoevaluación del ODS 5",
-    "quizLead": "El banco reúne 8 preguntas sobre el ODS 5. Cada intento presenta 5 preguntas: 2 informativas y 3 motivadoras.",
+    "quizLead": "Cada intento consiste en 8 preguntas sobre el ODS 5.",
     "deepeningTitle": "Profundización",
     "deepeningLead": "Los recursos se presentan agrupados por ODS, con resumen, dificultad y tiempo estimado. En ODS 5 se organizan en dos subtemas."
   },
@@ -42,7 +42,7 @@
     "plannedGroup": "Vídeos previstos",
     "noPublicUrl": "Sin enlace público disponible",
     "plannedNote": "Este vídeo está previsto, pero todavía no cuenta con un enlace público.",
-    "quizSource": "Cada intento combina preguntas informativas y motivadoras con corrección inmediata.",
+    "quizSource": "Cada intento incluye corrección inmediata.",
     "startQuiz": "Iniciar intento",
     "reshuffleQuiz": "Nuevo intento",
     "submitQuiz": "Corregir respuestas",
@@ -69,7 +69,7 @@
     "informative": "Informativa",
     "motivational": "Motivadora",
     "missingAnswers": "Responde todas las preguntas antes de corregir.",
-    "selectedModel": "Modelo aplicado: 5 preguntas por intento, con retroalimentación por fallos y categoría de resultado."
+    "selectedModel": "Modelo aplicado: 8 preguntas por intento."
   },
   "home": {
     "title": "Apartados principales",

@@ -58,13 +58,6 @@ const quizPayload = JSON.stringify({
       const panel = document.getElementById('quiz-panel');
       const results = document.getElementById('quiz-results');
 
-      const informativeQuestions = quizData.questions.filter(
-        (question) => question.orientation === quizData.ui.informative,
-      );
-      const motivationalQuestions = quizData.questions.filter(
-        (question) => question.orientation === quizData.ui.motivational,
-      );
-
       let activeQuestions = [];
 
       const shuffle = (items) => {
@@ -102,11 +95,7 @@ const quizPayload = JSON.stringify({
       };
 
       const renderAttempt = () => {
-        activeQuestions = [
-          ...shuffle(informativeQuestions).slice(0, 2),
-          ...shuffle(motivationalQuestions).slice(0, 3),
-        ];
-        activeQuestions = shuffle(activeQuestions);
+        activeQuestions = shuffle(quizData.questions);
 
         panel.innerHTML = '';
         results.innerHTML = '';

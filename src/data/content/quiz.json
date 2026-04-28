@@ -1,33 +1,33 @@
 {
-  "bankNote": "La autoevaluación del ODS 5 parte de un banco de 8 preguntas y cada intento selecciona 5: 2 informativas y 3 motivadoras.",
+  "bankNote": "Cada intento de la autoevaluación del ODS 5 consiste en 8 preguntas.",
   "categories": [
     {
       "min": 0,
-      "max": 1,
+      "max": 2,
       "label": "No concienciado",
       "text": "Has comenzado a explorar la igualdad de género en el ámbito digital, pero aún quedan conceptos clave por asimilar. No te preocupes, es un tema complejo y lleno de matices. Te animamos a revisar los vídeos y los materiales de profundización para entender mejor cómo los sesgos en IA, los algoritmos de contratación y los roles en videojuegos pueden perpetuar desigualdades. ¡Cada paso cuenta para construir una tecnología más justa!"
     },
     {
       "min": 2,
-      "max": 2,
+      "max": 4,
       "label": "Camino de mejora",
       "text": "Vas por buen camino. Has identificado algunas de las principales problemáticas, como la existencia de sesgos en los datos o la necesidad de auditar algoritmos. Aún puedes profundizar en cómo aplicar medidas concretas (anonimización de currículums, diseño de datasets inclusivos, creación de personajes diversos) en tu futura práctica profesional. Sigue así, estás en el camino de convertirte en agente de cambio."
     },
     {
-      "min": 3,
-      "max": 3,
+      "min": 5,
+      "max": 6,
       "label": "Concienciado",
       "text": "¡Bien! Tienes una comprensión sólida de los retos de la igualdad de género en el sector tecnológico. Sabes que la IA puede reproducir sesgos históricos y que los videojuegos han cosificado a la mujer, pero también reconoces que existen herramientas para revertirlo: auditorías, anonimización, diseño de personajes diversos. Este nivel de conciencia es esencial para que, como futura profesional, puedas desarrollar soluciones más equitativas."
     },
     {
-      "min": 4,
-      "max": 4,
+      "min": 7,
+      "max": 7,
       "label": "Muy concienciado",
       "text": "Excelente. Has interiorizado la mayoría de los conceptos y eres capaz de conectar los problemas (sesgos en selección, brechas en STEM, representación en videojuegos) con soluciones concretas desde la ingeniería informática. Tu visión crítica te permite identificar no solo el problema, sino también las palancas para construir tecnología inclusiva. ¡Sigue profundizando y compartiendo este conocimiento!"
     },
     {
-      "min": 5,
-      "max": 5,
+      "min": 8,
+      "max": 8,
       "label": "Perfectamente concienciado",
       "text": "¡Impresionante! Has demostrado un dominio completo de los contenidos. No solo entiendes cómo se generan los sesgos de género en IA y en la industria del videojuego, sino que también manejas estrategias para prevenirlos y corregirlos. Tienes una visión integral del ODS 5 aplicada al ámbito informático, lo que te sitúa como un agente clave para diseñar un futuro digital más justo, diverso y libre de estereotipos. ¡Gracias por tu compromiso!"
     }
