@@ -37,20 +37,6 @@
       "id": 1,
       "orientation": "Informativa",
       "sourceVideo": "Vídeo 1",
-      "prompt": "¿De dónde aprende la IA?",
-      "options": [
-        "Nace sabiendo.",
-        "Aprende de datos históricos sesgados.",
-        "Aprende de datos que reflejan una realidad justa.",
-        "Se entrena leyendo bulos de Twitter."
-      ],
-      "correctIndex": 1,
-      "explanation": "El vídeo explica que la IA aprende de datos históricos que contienen datos históricos sesgados."
-    },
-    {
-      "id": 2,
-      "orientation": "Informativa",
-      "sourceVideo": "Vídeo 1",
       "prompt": "¿Qué sucede con los modelos de contratación por IA?",
       "options": [
         "Siempre eligen a los y las mejores candidatas, independientemente del género.",
@@ -62,7 +48,7 @@
       "explanation": "El vídeo explica que, en estos sistemas supuestamente objetivos, candidatas con buena formación y experiencia quedan fuera, mientras perfiles masculinos similares pasan el filtro."
     },
     {
-      "id": 3,
+      "id": 2,
       "orientation": "Informativa",
       "sourceVideo": "Vídeo 2",
       "prompt": "¿Qué roles ha perpetuado históricamente la industria del videojuego?",
@@ -76,35 +62,35 @@
       "explanation": "El vídeo explica (y muestra con diversos ejemplos) que a menudo los videojuegos han perpetuado roles que cosifican a la mujer."
     },
     {
+      "id": 3,
+      "orientation": "Informativa",
+      "sourceVideo": "Vídeo 3",
+      "prompt": "En el artículo A review on fairness in Machine Learning (2022). ¿Qué conclusión extrae ese estudio sobre los modelos de Deep Learning cuando minimizan el error global de predicción?",
+      "options": [
+        "Que los modelos se vuelven completamente insesgados gracias a la optimización.",
+        "Que por diseño favorecen a los grupos mayoritarios frente a los minoritarios.",
+        "Que el error de predicción no tiene relación alguna con los sesgos de género.",
+        "Que estos modelos solo pueden entrenarse con datos escritos en inglés."
+      ],
+      "correctIndex": 1,
+      "explanation": "El vídeo recoge textualmente que los objetivos algorítmicos, “al minimizar el error global de predicción, favorecen por diseño a los grupos mayoritarios sobre los minoritarios”."
+    },
+    {
       "id": 4,
       "orientation": "Informativa",
-      "sourceVideo": "Vídeo 2",
-      "prompt": "¿Qué clase de experiencias invita a crear el ODS 5 en el mundo del videojuego?",
+      "sourceVideo": "Vídeo 4",
+      "prompt": "Se describe varios efectos negativos que producen ciertos algoritmos. ¿Cuáles de las siguientes consecuencias enumera de forma explícita?",
       "options": [
-        "Videojuegos en los que los roles estereotípicos se inviertan, relegando a los hombres a personajes secundarios.",
-        "Videojuegos sin personajes, para evitar caer en sesgos.",
-        "Juegos en los que se cosifique y sexualice a los personajes constantemente, pero sin distinguir por género.",
-        "Experiencias donde la diversidad sea la norma, y no la excepción."
+        "Facilitan la participación equitativa de todas las personas en redes sociales.",
+        "Replican roles de los años 50, amplifican discursos de odio y borran la voz de las mujeres.",
+        "Borran únicamente la voz de los hombres en las plataformas digitales.",
+        "Impiden cualquier tipo de interacción entre personas de distinto género."
       ],
-      "correctIndex": 3,
-      "explanation": "El vídeo dice expresamente: “El ODS 5 nos reta a crear experiencias donde la diversidad sea la configuración por defecto.”"
+      "correctIndex": 1,
+      "explanation": "La enumeración es directa en el vídeo: “Mientras unos algoritmos replican roles de los años 50, otros amplifican discursos de odio y algunos directamente borran la voz de las mujeres”."
     },
     {
       "id": 5,
-      "orientation": "Motivadora",
-      "sourceVideo": "Vídeo 1",
-      "prompt": "¿Qué harías tú con los currículums para evitar sesgos?",
-      "options": [
-        "Exigir y usar todos los datos sensibles de forma explícita.",
-        "Contratar aleatoriamente.",
-        "Anonimizar los currículums.",
-        "Mandárselos a ChatGPT, Claude y Grok para que decidan entre los tres."
-      ],
-      "correctIndex": 2,
-      "explanation": "El vídeo explica que ocultar la foto, nombre y otros datos relacionados con el género (proxies) es un primer paso para evitar los sesgos."
-    },
-    {
-      "id": 6,
       "orientation": "Motivadora",
       "sourceVideo": "Vídeo 1",
       "prompt": "¿Qué debes hacer con los algoritmos?",
@@ -118,21 +104,7 @@
       "explanation": "El vídeo explica la importancia de auditar los modelos para poder detectar sesgos y ajustar los modelos."
     },
     {
-      "id": 7,
-      "orientation": "Motivadora",
-      "sourceVideo": "Vídeo 2",
-      "prompt": "Diseñando un videojuego o experiencia cultural digital, detectas que todos los personajes femeninos quedan en un segundo plano. ¿Qué haces?",
-      "options": [
-        "Impulsar un rediseño de la trama y personajes para eliminar el sesgo.",
-        "Eliminar todos los personajes femeninos.",
-        "Añadir algunos personajes masculinos que también sean secundarios, para compensar.",
-        "Confiar en que la gente en redes no se dé cuenta."
-      ],
-      "correctIndex": 0,
-      "explanation": "El vídeo dice, expresamente: “¡Diseña juegos donde todo el mundo pueda ser el héroe o la heroína!”"
-    },
-    {
-      "id": 8,
+      "id": 6,
       "orientation": "Motivadora",
       "sourceVideo": "Vídeo 2",
       "prompt": "¿Qué harías si te piden diseñar un dataset para entrenar un modelo para usar en videojuegos?",
@@ -144,6 +116,34 @@
       ],
       "correctIndex": 2,
       "explanation": "El vídeo explica que hay muchas formas de eliminar sesgos, desde el diseño de lógica de juego hasta la creación de datasets para IA."
+    },
+    {
+      "id": 7,
+      "orientation": "Motivadora",
+      "sourceVideo": "Vídeo 3",
+      "prompt": "Un vídeo recomienda actuar incluso cuando no se puede eliminar por completo una injusticia en un modelo. ¿Qué acción concreta propone como fundamental a corto plazo?",
+      "options": [
+        "Sustituir el modelo por una regresión lineal simple que no contenga sesgos.",
+        "Cambiar el lenguaje de programación a uno más moderno.",
+        "Desconectar el modelo inmediatamente para no causar más daño.",
+        "Documentar las injusticias detectadas, en favor de la transparencia y la responsabilidad."
+      ],
+      "correctIndex": 3,
+      "explanation": "El vídeo señala: “documenta las injusticias que detectes en tus modelos, aunque no puedas eliminarlas del todo. La transparencia en las decisiones automatizadas es fundamental para la confianza y la responsabilidad”."
+    },
+    {
+      "id": 8,
+      "orientation": "Motivadora",
+      "sourceVideo": "Vídeo 4",
+      "prompt": "“Tú que diseñas arquitecturas, tú que entrenas modelos, tú que escribes cada línea, tienes el poder de cambiar esto”. ¿A qué te está llamando directamente ese mensaje?",
+      "options": [
+        "A esperar a que las plataformas digitales corrijan los sesgos por sí solas.",
+        "A delegar toda la responsabilidad en los equipos de ética de las empresas.",
+        "A usar tu capacidad técnica para transformar unos algoritmos que hoy replican roles anticuados, odio o silencian voces.",
+        "A abandonar el proyecto si detectas cualquier tipo de sesgo."
+      ],
+      "correctIndex": 2,
+      "explanation": "La frase aparece justo después de describir que algunos algoritmos “replican roles de los años 50, otros amplifican discursos de odio y algunos directamente borran la voz de las mujeres”."
     }
   ]
 }

@@ -354,6 +354,30 @@ const englishTranslations = {
     'Roles that present men as secondary and unnecessary agents in the plot.',
   'El vídeo explica (y muestra con diversos ejemplos) que a menudo los videojuegos han perpetuado roles que cosifican a la mujer.':
     'The video explains, and shows with several examples, that video games have often perpetuated roles that objectify women.',
+  'En el artículo A review on fairness in Machine Learning (2022). ¿Qué conclusión extrae ese estudio sobre los modelos de Deep Learning cuando minimizan el error global de predicción?':
+    'In the article A review on fairness in Machine Learning (2022), what conclusion does that study draw about Deep Learning models when they minimize overall prediction error?',
+  'Que los modelos se vuelven completamente insesgados gracias a la optimización.':
+    'That the models become completely unbiased thanks to optimization.',
+  'Que por diseño favorecen a los grupos mayoritarios frente a los minoritarios.':
+    'That by design they favor majority groups over minority ones.',
+  'Que el error de predicción no tiene relación alguna con los sesgos de género.':
+    'That prediction error has no relation at all to gender bias.',
+  'Que estos modelos solo pueden entrenarse con datos escritos en inglés.':
+    'That these models can only be trained with data written in English.',
+  'El vídeo recoge textualmente que los objetivos algorítmicos, “al minimizar el error global de predicción, favorecen por diseño a los grupos mayoritarios sobre los minoritarios”.':
+    'The video states verbatim that algorithmic objectives, "by minimizing overall prediction error, favor majority groups over minority ones by design."',
+  'Se describe varios efectos negativos que producen ciertos algoritmos. ¿Cuáles de las siguientes consecuencias enumera de forma explícita?':
+    'Several negative effects produced by certain algorithms are described. Which of the following consequences are explicitly listed?',
+  'Facilitan la participación equitativa de todas las personas en redes sociales.':
+    'They facilitate the equitable participation of all people on social media.',
+  'Replican roles de los años 50, amplifican discursos de odio y borran la voz de las mujeres.':
+    'They replicate 1950s roles, amplify hate speech, and erase women\'s voices.',
+  'Borran únicamente la voz de los hombres en las plataformas digitales.':
+    'They erase only men\'s voices on digital platforms.',
+  'Impiden cualquier tipo de interacción entre personas de distinto género.':
+    'They prevent any kind of interaction between people of different genders.',
+  'La enumeración es directa en el vídeo: “Mientras unos algoritmos replican roles de los años 50, otros amplifican discursos de odio y algunos directamente borran la voz de las mujeres”.':
+    'The list is explicit in the video: "While some algorithms replicate 1950s roles, others amplify hate speech and some directly erase women\'s voices."',
   '¿Qué clase de experiencias invita a crear el ODS 5 en el mundo del videojuego?':
     'What kind of experiences does SDG 5 invite us to create in video games?',
   'Videojuegos en los que los roles estereotípicos se inviertan, relegando a los hombres a personajes secundarios.':
@@ -406,6 +430,30 @@ const englishTranslations = {
   'Confiar en datasets similares que encuentre en línea.': 'Trust similar datasets I find online.',
   'El vídeo explica que hay muchas formas de eliminar sesgos, desde el diseño de lógica de juego hasta la creación de datasets para IA.':
     'The video explains that there are many ways to eliminate bias, from game logic design to creating datasets for AI.',
+  'Un vídeo recomienda actuar incluso cuando no se puede eliminar por completo una injusticia en un modelo. ¿Qué acción concreta propone como fundamental a corto plazo?':
+    'One video recommends taking action even when an injustice in a model cannot be completely eliminated. What concrete action does it propose as fundamental in the short term?',
+  'Sustituir el modelo por una regresión lineal simple que no contenga sesgos.':
+    'Replace the model with a simple linear regression that contains no bias.',
+  'Cambiar el lenguaje de programación a uno más moderno.':
+    'Change the programming language to a more modern one.',
+  'Desconectar el modelo inmediatamente para no causar más daño.':
+    'Disconnect the model immediately to avoid causing more harm.',
+  'Documentar las injusticias detectadas, en favor de la transparencia y la responsabilidad.':
+    'Document the detected injustices in favor of transparency and accountability.',
+  'El vídeo señala: “documenta las injusticias que detectes en tus modelos, aunque no puedas eliminarlas del todo. La transparencia en las decisiones automatizadas es fundamental para la confianza y la responsabilidad”.':
+    'The video states: "Document the injustices you detect in your models, even if you cannot eliminate them completely. Transparency in automated decisions is fundamental for trust and accountability."',
+  '“Tú que diseñas arquitecturas, tú que entrenas modelos, tú que escribes cada línea, tienes el poder de cambiar esto”. ¿A qué te está llamando directamente ese mensaje?':
+    '"You who design architectures, you who train models, you who write every line, have the power to change this." What is that message directly calling you to do?',
+  'A esperar a que las plataformas digitales corrijan los sesgos por sí solas.':
+    'Wait for digital platforms to correct the biases on their own.',
+  'A delegar toda la responsabilidad en los equipos de ética de las empresas.':
+    'Delegate all responsibility to companies\' ethics teams.',
+  'A usar tu capacidad técnica para transformar unos algoritmos que hoy replican roles anticuados, odio o silencian voces.':
+    'Use your technical capacity to transform algorithms that today replicate outdated roles, spread hate, or silence voices.',
+  'A abandonar el proyecto si detectas cualquier tipo de sesgo.':
+    'Abandon the project if you detect any kind of bias.',
+  'La frase aparece justo después de describir que algunos algoritmos “replican roles de los años 50, otros amplifican discursos de odio y algunos directamente borran la voz de las mujeres”.':
+    'The sentence appears right after describing that some algorithms "replicate 1950s roles, others amplify hate speech, and some directly erase women\'s voices."',
 };
 
 export function translateContentText(value, locale) {
