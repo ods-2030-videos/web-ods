@@ -42,6 +42,17 @@ const quizPayload = JSON.stringify({
 
       <p class="section-note">{locale.quizUi.selectedModel}</p>
       <div id="quiz-panel" class="quiz-panel"></div>
+      <div class="quiz-controls quiz-controls--bottom">
+        <button class="quiz-button" id="start-quiz-bottom" type="button">
+          {locale.labels.startQuiz}
+        </button>
+        <button class="quiz-button is-secondary" id="shuffle-quiz-bottom" type="button">
+          {locale.labels.reshuffleQuiz}
+        </button>
+        <button class="quiz-button is-secondary" id="submit-quiz-bottom" type="button">
+          {locale.labels.submitQuiz}
+        </button>
+      </div>
       <div id="quiz-results" class="quiz-results"></div>
     </div>
   </div>
@@ -52,9 +63,18 @@ const quizPayload = JSON.stringify({
     const quizData = quizDataElement ? JSON.parse(quizDataElement.textContent || '{}') : null;
 
     if (quizData) {
-      const startButton = document.getElementById('start-quiz');
-      const shuffleButton = document.getElementById('shuffle-quiz');
-      const submitButton = document.getElementById('submit-quiz');
+      const startButtons = [
+        document.getElementById('start-quiz'),
+        document.getElementById('start-quiz-bottom'),
+      ].filter(Boolean);
+      const shuffleButtons = [
+        document.getElementById('shuffle-quiz'),
+        document.getElementById('shuffle-quiz-bottom'),
+      ].filter(Boolean);
+      const submitButtons = [
+        document.getElementById('submit-quiz'),
+        document.getElementById('submit-quiz-bottom'),
+      ].filter(Boolean);
       const panel = document.getElementById('quiz-panel');
       const results = document.getElementById('quiz-results');
 
@@ -151,9 +171,9 @@ const quizPayload = JSON.stringify({
         `;
       };
 
-      startButton?.addEventListener('click', renderAttempt);
-      shuffleButton?.addEventListener('click', renderAttempt);
-      submitButton?.addEventListener('click', evaluateAttempt);
+      startButtons.forEach((button) => button.addEventListener('click', renderAttempt));
+      shuffleButtons.forEach((button) => button.addEventListener('click', renderAttempt));
+      submitButtons.forEach((button) => button.addEventListener('click', evaluateAttempt));
       renderAttempt();
     }
   </script>
