@@ -87,7 +87,11 @@
         "license": "CC-BY-NC-SA",
         "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es",
         "subtitles": "español, inglés",
-        "character": "Mixto"
+        "character": "Mixto",
+        "infographic": {
+          "src": "infografia-sesgos-algoritmicos.jpeg",
+          "alt": "Infografía sobre sesgos algorítmicos"
+        }
       },
       {
         "slot": "Vídeo 4",
@@ -97,7 +101,11 @@
         "license": "CC-BY-NC-SA",
         "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es",
         "subtitles": "español, inglés",
-        "character": "Motivador"
+        "character": "Motivador",
+        "infographic": {
+          "src": "infografia-redes-sociales.jpeg",
+          "alt": "Infografía sobre redes sociales y estereotipos de género"
+        }
       }
     ]
   },

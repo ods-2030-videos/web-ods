@@ -5,6 +5,9 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://ods-2030-videos.github.io',
   base: '/web-ods/',
+  vite: {
+    cacheDir: '.vite-cache',
+  },
   build: {
     inlineStylesheets: 'always',
   },

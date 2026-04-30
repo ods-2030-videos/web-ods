@@ -19,6 +19,15 @@ function getAssetUrl(path) {
   return `${base}${normalizedPath}`;
 }
 
+function getYouTubeEmbedUrl(youtubeId, language) {
+  const params = new URLSearchParams({
+    rel: '0',
+    hl: language || 'es',
+  });
+
+  return `https://www.youtube-nocookie.com/embed/${youtubeId}?${params.toString()}`;
+}
+
 const videoGroups = localizeContent(videoSections, locale).map((group) => ({
   ...group,
   videos: group.videos.map((video) => ({
@@ -72,7 +81,7 @@ const videoGroups = localizeContent(videoSections, locale).map((group) => ({
                 {video.youtubeId && (
                   <div class="video-shell">
                     <iframe
-                      src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`}
+                      src={getYouTubeEmbedUrl(video.youtubeId, locale.htmlLang)}
                       title={video.title}
                       loading="lazy"
                       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
