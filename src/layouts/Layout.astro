@@ -34,6 +34,7 @@ const footerItems = typeof footer === 'object' && footer !== null ? footer : nul
             {footerItems.licenseName}
           </a>
         </p>
+        {footerItems.attribution && <p>{footerItems.attribution}</p>}
         <p>{footerItems.thirdPartyLicenses}</p>
         <p>{footerItems.usageVerification}</p>
       </footer>
